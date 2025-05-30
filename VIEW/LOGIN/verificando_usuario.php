@@ -25,7 +25,7 @@ if (isset($_SESSION['idUsuario']) && isset($_SESSION['usuario'])) {
 
             switch ($rol) {
                 case 1:
-                    echo "<strong>Rol:</strong> Administrador";
+                     header("Location: ../MENU/list.php");
                     break;
                 case 2:
                     echo "<strong>Rol:</strong> Usuario normal";

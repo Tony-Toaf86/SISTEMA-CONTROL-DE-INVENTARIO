@@ -21,8 +21,8 @@ try {
         if ($row && password_verify($password, $row["contrasena"])) {
             session_start();
             $_SESSION["usuario"] = $row["usuario"];
-            //$_SESSION["idUsuario"] = $row["idUsuario"];
-            //$_SESSION["rolUsuario"] = $row["rolUsuario"];
+            $_SESSION["idUsuario"] = $row["idUsuario"];
+            $_SESSION["rolUsuario"] = $row["rolUsuario"];
         
             header("Location: verificando_usuario.php");
         } else {
